@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2017-10-20
+  end_date: 2017-10-20
+  first_name: MyString
+  last_name: MyString
+  clothes_balance: 1
+  active: 1
+  status: MyString
+  member_type: MyString
+  referred_by: MyString
+  boost_credit: 9.99
+  birthday_boost: false
+  cost: 9.99
+  email: MyString
+
+two:
+  start_date: 2017-10-20
+  end_date: 2017-10-20
+  first_name: MyString
+  last_name: MyString
+  clothes_balance: 1
+  active: 1
+  status: MyString
+  member_type: MyString
+  referred_by: MyString
+  boost_credit: 9.99
+  birthday_boost: false
+  cost: 9.99
+  email: MyString

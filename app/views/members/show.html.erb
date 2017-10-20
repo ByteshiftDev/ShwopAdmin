@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @member.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @member.end_date %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @member.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @member.last_name %>
+</p>
+
+<p>
+  <strong>Clothes balance:</strong>
+  <%= @member.clothes_balance %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @member.active %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @member.status %>
+</p>
+
+<p>
+  <strong>Member type:</strong>
+  <%= @member.member_type %>
+</p>
+
+<p>
+  <strong>Referred by:</strong>
+  <%= @member.referred_by %>
+</p>
+
+<p>
+  <strong>Boost credit:</strong>
+  <%= @member.boost_credit %>
+</p>
+
+<p>
+  <strong>Birthday boost:</strong>
+  <%= @member.birthday_boost %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @member.cost %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @member.email %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Members</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Clothes balance</th>
+      <th>Active</th>
+      <th>Status</th>
+      <th>Member type</th>
+      <th>Referred by</th>
+      <th>Boost credit</th>
+      <th>Birthday boost</th>
+      <th>Cost</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @members.each do |member| %>
+      <tr>
+        <td><%= member.start_date %></td>
+        <td><%= member.end_date %></td>
+        <td><%= member.first_name %></td>
+        <td><%= member.last_name %></td>
+        <td><%= member.clothes_balance %></td>
+        <td><%= member.active %></td>
+        <td><%= member.status %></td>
+        <td><%= member.member_type %></td>
+        <td><%= member.referred_by %></td>
+        <td><%= member.boost_credit %></td>
+        <td><%= member.birthday_boost %></td>
+        <td><%= member.cost %></td>
+        <td><%= member.email %></td>
+        <td><%= link_to 'Show', member %></td>
+        <td><%= link_to 'Edit', edit_member_path(member) %></td>
+        <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Member', new_member_path %>
