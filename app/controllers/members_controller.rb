@@ -4,7 +4,8 @@ class MembersController < ApplicationController
   # GET /members
   # GET /members.json
   def index
-    @members = Member.all
+    @members = Member.response
+  #  @members = Member.all
   end
 
   # GET /members/1
