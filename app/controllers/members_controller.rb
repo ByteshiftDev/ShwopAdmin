@@ -7,6 +7,7 @@ class MembersController < ApplicationController
     @members = JSON.parse(Member.response.to_s)
 
     puts '*****************************************'
+    puts @members
 
     @members.each do |member|
       @member = Member.new(member)
