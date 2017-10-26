@@ -18,6 +18,8 @@
       <th>Birthday boost</th>
       <th>Cost</th>
       <th>Email</th>
+      <th>Add On</th>
+      <th>Flagged Member</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -38,6 +40,8 @@
         <td><%= member.birthday_boost %></td>
         <td><%= member.cost %></td>
         <td><%= member.email %></td>
+        <td><%= member.add_on %></td>
+        <td><%= member.flagged_member %></td>
         <td><%= link_to 'Show', member %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

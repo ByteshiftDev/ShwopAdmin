@@ -14,6 +14,8 @@ class CreateMembers < ActiveRecord::Migration[5.1]
       t.boolean :birthday_boost
       t.decimal :cost
       t.string :email
+      t.string :add_on
+      t.boolean :flagged_member
 
       t.timestamps
     end

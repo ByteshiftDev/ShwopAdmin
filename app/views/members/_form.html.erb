@@ -76,7 +76,18 @@
     <%= form.text_field :email, id: :member_email %>
   </div>
 
+  <div class="field">
+    <%= form.label :add_on %>
+    <%= form.text_field :add_on, id: :member_add_on %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flagged_member %>
+    <%= form.text_field :flagged_member, id: :member_flagged_member %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>

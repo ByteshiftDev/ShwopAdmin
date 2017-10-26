@@ -4,8 +4,18 @@ class MembersController < ApplicationController
   # GET /members
   # GET /members.json
   def index
-    @members = Member.response
-  #  @members = Member.all
+    @members = JSON.parse(Member.response.to_s)
+
+    puts '*****************************************'
+
+    @members.each do |member|
+      @member = Member.new(member)
+      puts @member
+    end
+
+
+    # puts @members
+
   end
 
   # GET /members/1
@@ -70,6 +80,6 @@ class MembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
-      params.require(:member).permit(:start_date, :end_date, :first_name, :last_name, :clothes_balance, :active, :status, :member_type, :referred_by, :boost_credit, :birthday_boost, :cost, :email)
+      params.require(:member).permit(:start_date, :end_date, :first_name, :last_name, :clothes_balance, :active, :status, :member_type, :referred_by, :boost_credit, :birthday_boost, :cost, :email, :add_on, :flagged_member)
     end
 end

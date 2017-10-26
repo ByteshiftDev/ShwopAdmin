@@ -65,5 +65,15 @@
   <%= @member.email %>
 </p>
 
+<p>
+  <strong>Add On:</strong>
+  <%= @member.add_on %>
+</p>
+
+<p>
+  <strong>Flagged Member:</strong>
+  <%= @member.flagged_member %>
+</p>
+
 <%= link_to 'Edit', edit_member_path(@member) %> |
 <%= link_to 'Back', members_path %>
