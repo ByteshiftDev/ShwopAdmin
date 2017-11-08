@@ -27,24 +27,22 @@
   <tbody>
     <% @members.each do |member| %>
       <tr>
-        <td><%= member.start_date %></td>
-        <td><%= member.end_date %></td>
-        <td><%= member.first_name %></td>
-        <td><%= member.last_name %></td>
-        <td><%= member.clothes_balance %></td>
-        <td><%= member.active %></td>
-        <td><%= member.status %></td>
-        <td><%= member.member_type %></td>
-        <td><%= member.referred_by %></td>
-        <td><%= member.boost_credit %></td>
-        <td><%= member.birthday_boost %></td>
-        <td><%= member.cost %></td>
-        <td><%= member.email %></td>
-        <td><%= member.add_on %></td>
-        <td><%= member.flagged_member %></td>
-        <td><%= link_to 'Show', member %></td>
-        <td><%= link_to 'Edit', edit_member_path(member) %></td>
-        <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= member["start_date"] %></td>
+        <td><%= member["end_date"] %></td>
+        <td><%= member["first_name"] %></td>
+        <td><%= member["last_name"] %></td>
+        <td><%= member["clothes_balance"] %></td>
+        <td><%= member["active"] %></td>
+        <td><%= member["status"] %></td>
+        <td><%= member["member_type"] %></td>
+        <td><%= member["referred_by"] %></td>
+        <td><%= member["boost_credit"] %></td>
+        <td><%= member["birthday_boost"] %></td>
+        <td><%= member["cost"] %></td>
+        <td><%= member["email"] %></td>
+        <td><%= member["add_on"] %></td>
+        <td><%= member["flagged_member"] %></td>
+      
       </tr>
     <% end %>
   </tbody>

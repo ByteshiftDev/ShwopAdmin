@@ -6,7 +6,7 @@ class MembersController < ApplicationController
   def index
     @members = JSON.parse(Member.response.to_s)
 
-    puts '*****************************************'
+    puts '******************************************************'
     puts @members
 
     @members.each do |member|
